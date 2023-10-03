@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.logo{
+  width:20%;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.logo img{
+  width: 100%;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+
+}
+.nav-list{
+    width: 50%;
+    /*background-color: white;*/
+    display: flex;
+    align-items: center;
+    list-style: none;
+
+
+}
+.nav-list li{
+  /*list-style: none;*/
+  padding: 26px 30px;
+
+}
+
+.nav-list li a{
+  text-decoration: none;
+  color:white;
+
+}
+
+.nav-list li a:hover{
+  /*text-decoration: none;*/
+  color: grey;
+
+}
+
+.rightNav{
+ /* background-color:aquamarine;*/
+  width:50%;
+  text-align: right;
+  padding: 0 23px;
+}
+
+#search{
+  padding:5px;
+  font-size: 17px;
+  border: 2px solid grey;
+  border-radius: 9px;
+}
+
+.background{
+  background: rgba(0,0,0,0.7) url('../img/dog.webp');
+  background-size:cover;
+  background-blend-mode:darken;
+}
+
+.secondHalf img{
+  margin: 20px;
+  border-radius: 100%;
+  width:20rem;
+  border:4px solid whitesmoke;
+  border-radius: 100%;
+}
+
+.box-main{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 50%;
+  margin:auto;
+  height: 80%;
+}
+
+.Heading{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+
+.para{
+  font-size: 20px;
+}
+
+.firstSection{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  padding: 100px 0;
+  position:relative;
+
+}
+
+.firstHalf{
+  width:80%;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+}
+
+.secondHalf{
+  width:40%;
+}
+
+.btn{
+  padding: 8px 20px;
+  margin:7px 4px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 17px;
+  background: none;
+  color: white;
+}
+
+.btn-sm{
+  padding: 5px 10px;
+  /*vertical-align: middle;*/
+  color:white;
+}
+
+.Rsec{
+  /*height:500px;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.imgFluid{
+  margin: 20px;
+  border-radius: 20%;
+  width:25rem;
+}
+
+.secTag{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: navy ;
+}
+
+.secSubTag{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+}
+
+.stories{
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.Lsec{
+  height:500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+}
+
+.hd{
+  align-items: center;
+  justify-content: center;
+}
+#testimonials {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  height:80vh ;
+}
+
+.carousel-inner {
+  border-radius: 8px;
+}
+
+.carousel-item img {
+  height: 80vh;
+  object-fit: cover;
+
+}
+
+.carousel-caption {
+  background-color: rgba(208, 37, 37, 0.77);
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+}
+
+/* Pricing Section 
+#pricing{
+  padding: 100px;
+  text-align: center;
+  justify-content: center;
+}
+
+.pricing-column{
+  padding: 3% 2%;
+}
+*/
+/* Style the carousel cards */
+.card {
+  border: none;
+  margin: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 24px;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+/* Style the carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent;
+  color: white;
+}
+
+
+
+/* sign up page */
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: .75em;
+  padding-right: .75em;
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+
+/* Footer Styles */
+.text-white {
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-lg-start {
+  text-align: left;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.bg-primary {
+  background-color: #007bff !important;
+}
+
+.bg-dark {
+  background-color: #343a40 !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-3 {
+  margin-top: 1rem !important;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.mb-md-0 {
+  margin-bottom: 0 !important;
+}
+
+#contact{
+  padding-top: 40px;
+  
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .logo {
+    width: 30%;
+  }
+
+  .firstSection {
+    min-height: auto; /* Remove the minimum height on smaller screens */
+    padding: 60px 0; /* Adjust the padding for smaller screens if needed */
+  }
+
+  .nav-list {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list li {
+    padding: 15px 0;
+  }
+
+  .rightNav {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  #search {
+    width: 100%;
+  }
+
+  .btn {
+    margin: 7px 0;
+  }
+
+  .Rsec {
+    flex-direction: column;
+    text-align: center; /* Center text in mobile view */
+  }
+
+  .imgFluid {
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .secSubTag {
+    margin-top: 20px; /* Add some margin to separate text in mobile view */
+  }
+
+  .stories {
+    padding: 0px;
+  }
+
+  .thumbnail {
+    margin-top: 20px;
+  }
+
+  /* Adjust the overall padding and margins for smaller screens */
+  .card-registration {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  /* Center-align the form elements on smaller screens */
+  .card-body {
+    text-align: center;
+  }
+
+  /* Adjust the input fields and labels for smaller screens */
+  .form-outline {
+    margin-bottom: 15px;
+  }
+
+  /* Center-align the gender options */
+  .d-md-flex {
+    justify-content: center;
+  }
+
+  /* Make the state and city selects take up full width */
+  .select {
+    width: 100%;
+  }
+
+  /* Increase the spacing between buttons */
+  .pt-3 {
+    padding-top: 10px;
+  }
+}
+
