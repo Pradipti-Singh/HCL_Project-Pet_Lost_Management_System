@@ -1,0 +1,135 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 1rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #ffc107;
+}
+
+.rightNav a {
+    background-color: #ffc107;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.rightNav a:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Profile section */
+.profile-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.profile-card h2 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.profile-card p {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+/* Pets section */
+.pets-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pet-card {
+    flex-basis: calc(50% - 1rem);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.pet-card img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.pet-card h3 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.pet-card p {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}

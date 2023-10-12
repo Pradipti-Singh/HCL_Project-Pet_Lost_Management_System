@@ -17,8 +17,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 0;
+  position: sticky; /* Makes the navbar sticky */
+  top: 0; /* Sticks it to the top of the viewport */
   cursor: pointer;
 
 }
@@ -33,7 +33,7 @@
 }
 .nav-list li{
   /*list-style: none;*/
-  padding: 26px 30px;
+  padding: 15px 30px;
 
 }
 
@@ -123,21 +123,33 @@
 }
 
 .btn{
-  padding: 8px 20px;
-  margin:7px 4px;
-  border: 2px solid white;
-  border-radius: 8px;
-  font-size: 17px;
-  background: none;
+  background-color: transparent;
   color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 6px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
+.btn:hover{
+  background-color: white;
+  color: #333; /* Change the text color on hover */
+  border-color: transparent; /* Hide the border on hover */
+}
+/*
 .btn-sm{
   padding: 5px 10px;
-  /*vertical-align: middle;*/
+  /*vertical-align: middle;
   color:white;
+}*/
+#about{
+  padding: 150px 20px;
 }
+#about p{
+  text-align: left;
 
+}
 .Rsec{
   /*height:500px;*/
   display: flex;
@@ -151,13 +163,14 @@
 .imgFluid{
   margin: 20px;
   border-radius: 20%;
-  width:25rem;
+  width:30rem;
 }
 
 .secTag{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30px;
   color: navy ;
+  text-align: left;
 }
 
 .secSubTag{
@@ -193,15 +206,17 @@
 .carousel-inner {
   border-radius: 8px;
 }
-
 .carousel-item img {
   height: 80vh;
   object-fit: cover;
 
 }
+#contact{
+  margin-bottom: 150px;
+}
 
 .carousel-caption {
-  background-color: rgba(208, 37, 37, 0.77);
+  background-color:#BCA37F;
   border-radius: 8px;
   padding: 10px;
   color: white;
@@ -218,6 +233,7 @@
   width: auto;
 }
 
+
 /* Pricing Section 
 #pricing{
   padding: 100px;
@@ -230,6 +246,11 @@
 }
 */
 /* Style the carousel cards */
+
+#pricing{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
 .card {
   border: none;
   margin: 10px;
@@ -266,6 +287,11 @@
 
 
 /* sign up page */
+.img-fluid{
+  width: 100%;
+  height: 95%;
+  padding: 6px 20px ;
+}
 .card-registration .select-input.form-control[readonly]:not([disabled]) {
   font-size: 1rem;
   line-height: 2.15;
@@ -334,13 +360,30 @@
   padding-top: 40px;
   
 }
+/* Transparent Button Styles */
+.login-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 6px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: white;
+  color: #333; /* Change the text color on hover */
+  border-color: transparent; /* Hide the border on hover */
+}
+
+
 
 /* Media Queries */
 @media (max-width: 768px) {
   .logo {
     width: 30%;
   }
-
   .firstSection {
     min-height: auto; /* Remove the minimum height on smaller screens */
     padding: 60px 0; /* Adjust the padding for smaller screens if needed */

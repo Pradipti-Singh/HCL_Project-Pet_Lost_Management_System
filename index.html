@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar background">
         <ul class="nav-list">
-            <div class="logo"><img src="img/TailTalesReunion (1).png" alt="logo"></div>
+            <div class="logo"><img src="img/Salford___Co.-removebg-preview.png" alt="logo"></div>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Us</a></li>
             <li><a href="#contact">Contact us</a></li>
@@ -21,7 +21,8 @@
         <div class = "rightNav">
           <input type="text" name="search" id="search" >
           <button class="btn btn-sm">Search</button>
-          <a href="signup.html" class="btn btn-sm btn-primary">Sign Up</a> 
+          <a href="login.html" class="login-button">Log in</a>
+          <a href="signup.html" class="btn btn-sm btn-primary">Register</a> 
             
            
         </div>
@@ -65,7 +66,7 @@
          </div>
           <!-- Cancel button to close the "Lost" form -->
          <button type="button" class="btn btn-secondary" id="cancelLostForm">Cancel</button>
-
+         <button type="button" class="btn btn-secondary" id="getLostLocation">Get Current Location</button>
          <button type="submit" class="btn btn-primary">Submit</button>
        </form>
      </div>
@@ -90,53 +91,11 @@
           <input type="text" class="form-control" id="foundLocation" name="foundLocation" required>
       </div>
       <button type="button" class="btn btn-secondary" id="cancelFoundForm">Cancel</button>
-
+      <button type="button" class="btn btn-secondary" id="getFoundLocation">Get Current Location</button>
       <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
-<script>
-  // JavaScript to toggle the "Found" form visibility
-  document.getElementById("openFoundForm").addEventListener("click", function () {
-      document.getElementById("foundForm").style.display = "block";
-      document.getElementById("lostForm").style.display = "none"; // Hide the "Lost" form
-  
-  });
-  //for cancel button
-  document.getElementById("cancelFoundForm").addEventListener("click", function () {
-        document.getElementById("foundForm").style.display = "none"; // Hide the "Found" form
-  });
-
-  // JavaScript to handle form submission (you can add AJAX or use a server endpoint for this)
-  document.getElementById("foundPetForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      // Add code to handle form submission, including file upload and sending location
-      // You can use JavaScript and a server-side script to process the form data
-      // For example, you can use the FormData API for file upload and fetch() or XMLHttpRequest to send the data to the server.
-  });
-</script>
-
-     <script>
-       // JavaScript to toggle the "Lost" form visibility
-        document.getElementById("openLostForm").addEventListener("click", function () {
-         document.getElementById("lostForm").style.display = "block";
-         document.getElementById("foundForm").style.display = "none"; // Hide the "Found" form
-    
-        });
-        //for cancel button
-        document.getElementById("cancelLostForm").addEventListener("click", function () {
-        document.getElementById("lostForm").style.display = "none"; // Hide the "Lost" form
-        });
-
-        // JavaScript to handle form submission (you can add AJAX or use a server endpoint for this)
-       document.getElementById("lostPetForm").addEventListener("submit", function (e) {
-         e.preventDefault();
-
-         // Add code to handle form submission, including file upload and sending location
-         // You can use JavaScript and a server-side script to process the form data
-         // For example, you can use the FormData API for file upload and fetch() or XMLHttpRequest to send the data to the server.
-        });
-     </script> 
+<script src="index.js" charset="UTF-8"></script>
     
 
     <section id="about" class="Rsec">
@@ -149,7 +108,7 @@
          </p>
         </div>
         <div class="thumbnail">
-            <img src="img/catdog1.jpg" alt="FoundPet image" class="imgFluid">
+            <img src="img/catdog.jpg" alt="FoundPet image" class="imgFluid">
         </div>
     </section>
     <!--
@@ -219,9 +178,14 @@
 <section id="pricing">
   <div class="container">
     <h2 class="Heading">Recent Lost & Found</h2>
+    <div id="recentLostAndFoundContainer" class="carousel-inner">
+      <!-- Content will be dynamically added here -->
+  </div>
     <!-- Carousel -->
     <div id="recentCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
+        <!-- Lost Items Placeholder -->
+    <div class="carousel-item active" id="lostItemsPlaceholder">
         <!-- Lost Items -->
         <div class="carousel-item active">
           <div class="row">
@@ -230,7 +194,7 @@
               <div class="card">
                 <img src="path_to_lost_image_1.jpg" class="card-img-top" alt="Lost Item 1">
                 <div class="card-body">
-                  <h5 class="card-title">Lost Item 1</h5>
+                  <h5 class="card-title">Lost Pet</h5>
                   <p class="card-text">Description of the lost item.</p>
                 </div>
               </div>
@@ -247,6 +211,9 @@
             </div>
           </div>
         </div>
+      </div> 
+      <!-- Found Items Placeholder -->
+    <div class="carousel-item" id="foundItemsPlaceholder">
         <!-- Found Items -->
         <div class="carousel-item">
           <div class="row">
@@ -265,13 +232,14 @@
               <div class="card">
                 <img src="path_to_found_image_2.jpg" class="card-img-top" alt="Found Item 2">
                 <div class="card-body">
-                  <h5 class="card-title">Found Item 2</h5>
+                  <h5 class="card-title">Found Pet 1</h5>
                   <p class="card-text">Description of the found item.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div> 
         <!-- Add more Lost and Found items as needed -->
       </div>
       <!-- Carousel Controls -->
@@ -286,7 +254,7 @@
     </div>
   </div>
 </section>
-
+<script src="index.js" charset="UTF-8"></script>
    
 
     <section>
@@ -352,7 +320,8 @@
       </div>
    </section>
    -->
-  <section id="contact">
+  <hr>
+   <section id="contact">
    <div class="container">
      <div class="row justify-content-center">
        <div class="col-md-10">
